@@ -76,7 +76,10 @@ public class C05CarMain {
 
 		// 다음 코드가 문제 없도록 클래스 구성을 합니다
 		// toString() 코드 삽입으로 멤버변수 값 확인합니다
-
+		
+//		C05Car ob = new C05Car();				// 에러, 기본 디폴트 생성자 undefined.
+//		System.out.println(ob.toString());
+	
 		C05Car ob1 = new C05Car("홍길동", 0, 100, "코나"); // owner,speed,fuel,model
 		System.out.println(ob1.toString());
 		C05Car ob2 = new C05Car("서길동", 50, "아반떼", 0); // owner,fuel,model,speed
