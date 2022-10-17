@@ -34,6 +34,7 @@ class Profile
 		job = arr[2];
 		major = arr[3];
 		
+		
 	}
 
 

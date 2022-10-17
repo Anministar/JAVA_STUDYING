@@ -2,8 +2,6 @@ package CH07;
 
 import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthOptionPaneUI;
-
 public class C02WhileWhile {
 
 	public static void main(String[] args) {
@@ -46,8 +44,6 @@ public class C02WhileWhile {
 //			System.out.println();
 //			dan++;
 //		}
-		
-		
 		
 		
 		
@@ -513,48 +509,6 @@ public class C02WhileWhile {
 		
 		
 		
-//		Scanner sc = new Scanner(System.in);
-//		int n = sc.nextInt();
-//		
-//		int i = 0;		//행
-//		int j = 0;		//공백
-//		int k = 0;		//별
-//		
-//		while( i < n ) {
-//			
-//			//공백
-//			j = 0;
-//			while (j <= i-1) {
-//				System.out.print(" ");
-//				j++;
-//			}
-//			
-//			k = 0;
-//			
-//			while (k <= (n-1)*2 - 2 * i) {
-//				System.out.print("*");
-//				k++;
-//			}			
-//			System.out.println();
-//			i++;
-//		}
-		
-//		i(개행)	j(공백)		k(별)
-//		0		x			0-(n-1)*2 -2*0
-//		1		0-0			0-(n-1)*2 -2*1
-//		2		0-1			0-(n-1)*2 -2*2
-//		n-1		0-2			0-0
-//		---------------------------------
-//				j=0			k=0
-//				j++			k++
-//				j <= i-1	k <= (n-1)*2 -2*i
-//
-//		k 만들 떄 (n-1) * 2 는 고정인데 여기서 n-1일때 0이 되려면 -2 * y를 하면되는데 y가 똑같이 n-1이여야함. 그래야 0이 됨. 이때 n-1 == i이므로 식이
-//		(n-1) * 2 - 2 * i이 되는거임.
-		
-		
-		
-		
 		
 		
 		//6
@@ -611,13 +565,13 @@ public class C02WhileWhile {
 		
 		
 		
-//		int i = 0;
-//		int j = 0;
-//		int k = 0;
-//		
-//		while (i < 7) {
-//			j = 0;
-//			k = 0;
+		int i = 0;
+		int j = 0;
+		int k = 0;
+		
+		while (i < 7) {
+			j = 0;
+			k = 0;
 			
 			
 //			if(i >= 4) {
@@ -633,21 +587,21 @@ public class C02WhileWhile {
 //			}
 			
 			
-//			while(k < 3-i ) {
-//				System.out.print(" ");
-//				k++;
-//			}
-//			
-//			while(j < 2 * i + 1 ) {
-//				if(i >= 4) {
-//					break;
-//				}
-//				System.out.print("*");
-//				j++;
-//			}
-//			System.out.println();
-//			i++;
-//		}
+			while(k < 3-i ) {
+				System.out.print(" ");
+				k++;
+			}
+			
+			while(j < 2 * i + 1 ) {
+				if(i >= 4) {
+					break;
+				}
+				System.out.print("*");
+				j++;
+			}
+			System.out.println();
+			i++;
+		}
 		
 		
 		
@@ -689,7 +643,7 @@ public class C02WhileWhile {
 //		else {
 //			//공백
 //			j = 0;
-//			while (j<=i-(n/2)-1) {
+//			while (j<=i-(n/2)+1) {
 //				System.out.print(" ");
 //				j++;
 //			}
@@ -703,9 +657,6 @@ public class C02WhileWhile {
 //		System.out.println();
 //		i++;
 //	}
-		
-		
-		// j<=i-(n/2)-1 j 조건식이 이상함. 원래는 j<= i - (n/2) + 1로 되어 있음.
 		
 		
 		
