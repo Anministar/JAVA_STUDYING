@@ -9,40 +9,32 @@ package CH14;
 
 
 
-class Super {
+class C05Super {
 	int num1;
 
-	public void sound() {
-		System.out.println("Sound1()");
-	}
 }
 
-class Sub extends Super {
+class C05Sub extends C05Super {
 	int num2; // 확장
 
-	public void move() {
-		System.out.println("Sub1 move1()"); // 확장
-	}
-	
-	public void sound() {
-		System.out.println("Sub's Sound1()"); // 재정의
-	}
-
 }
 
-public class C04MethodInfo {
+public class C05Upcasting {
 
 	public static void main(String[] args) {
-		//정상범위(Nocasting)
-		Super ob1 = new Super();
-		Super ob2 = new Super();
-		Sub ob3 = new Sub();
-		
+		//Nocasting
+		C05Super ob1 = new C05Super();
+		C05Sub ob2 = new C05Sub();
 		
 		//Upcasting(상위클래스 참조변수 = 하위객체)
-		Super ob4 = new Sub();
+		C05Super ob3 = new C05Sub();
+		ob3.num1 = 10; //가능
+//		ob3.num2 = 20; //불가 (참조변수가 num2를 찾지못함)
 		
-		
+		//Downcasting
+//		C05Sub down = ob3; //컴파일 에러 발생... 왜?
+		C05Sub down = (C05Sub) ob3;
+		down.num2 = 10;
 		
 	}
 
