@@ -1,3 +1,5 @@
+package Ch99;
+
 import java.util.Scanner;
 
 class C01Buyer {
@@ -90,7 +92,7 @@ class C01Seller {
 	
 }
 
-public class Prc {
+public class test {
 
 	public static void main(String[] args) {
 		
