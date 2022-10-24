@@ -33,13 +33,13 @@ public class C03Set {
 		
 		//조회 (복잡)
 		Iterator<String> iter = set.iterator();
-		while(iter.hasNext()) {
-			String tmp = iter.next();
-			System.out.println(tmp);
+		while(iter.hasNext()) { //가져올 객체가 있으면 true를 반환, 가져올 객체가 없으면 false를 반환
+			String tmp = iter.next(); // next(); ==> 컬렉션에서 하나의 객체를 가져옴.
+			System.out.println(tmp);	
 			
 		}
 		
-		set.remove("JAVA");
+		set.remove("JAVA"); // Set 컬렉션에서 객체를 하나 삭제
 		//확인(저장 수)
 		System.out.println("총 개체수 : " + set.size());
 		

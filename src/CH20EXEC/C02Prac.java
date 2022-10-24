@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.concurrent.Semaphore;
 
 public class C02Prac {
 
@@ -86,11 +87,33 @@ public class C02Prac {
 				break;
 			case 4:
 				//ID를 받아서 map에 있는 동일한 id/pw를 삭제
-					
+				
+				System.out.println("동일한 모든 ID와 PW를 삭제합니다.");
+				System.out.println("삭제할 ID를 입력하세요 >>> ");
+				String id4 = sc.next();
+				while(true) {
+					String value = map.remove(id4);
+					if(value == null) {
+						System.out.println("없는 ID입니다.");
+						System.out.println("삭제할 ID를 다시 입력하세요 >>> ");
+						id4 = sc.next();
+						continue;
+					}
+					else {
+						System.out.println("ID와 PW를 삭제했습니다.");
+						break;
+					}
+				}
 				break;
 			case 5:
 				//전체조회
-				
+				System.out.println("전체 ID와 PW를 조회합니다.");
+				Set <String> set = map.keySet();
+				for (String key : set) {
+					String value = map.get(key);
+					System.out.println("ID : " + key + "\tPW : " + value);
+				}
+				System.out.println("조회 끝!");
 				break;
 			case 6:
 				System.exit(-1);
