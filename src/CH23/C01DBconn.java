@@ -25,7 +25,7 @@ public class C01DBconn {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver"); //DB 드라이버 로드 @ 클래스는 설계도면이지만, 도면이여도 종이는 있어야하지 않겠나.
 													   //이런 드라이버가 있다고 알려주는거임.
-													   //메모리 공간에 드라이버 적재
+													   //  메모리 공간에 드라이버 적재
 			System.out.println("Driver Loading Success!!");
 			conn = DriverManager.getConnection(url, id, pw); //DB Connection 객체 받기
 			System.out.println("DB Connected...");
