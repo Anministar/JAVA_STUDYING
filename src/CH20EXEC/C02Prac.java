@@ -1,16 +1,18 @@
 package CH20EXEC;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
-import java.util.concurrent.Semaphore;
+
+import org.mindrot.bcrypt.BCrypt;
 
 public class C02Prac {
 
+	
+	
+	BCrypt passwordEncoder = new BCrypt();
+	
 	public static void main(String[] args) {
 	
 		int num = 0;
@@ -53,6 +55,27 @@ public class C02Prac {
 				}
 	
 				break;
+				
+//				### 선생님 해답 ###
+				
+//				System.out.print("ID : ");
+//				id = sc.next();
+//				if(map.containsKey(id)) {
+//					System.out.println("동일 ID 존재합니다.");
+//					break;
+//				}
+//				pw = sc.next(); //1234
+//				pw = BCrypt.hashpw(pw, BCrypt.gensalt()); //1234를 받아서 hash값으로 만드는 작업을 해주게 되고.
+//														  // 서로 다른 id에서 동일한 1234 pw여도 + s(Salt값)을 주면서 다른 값으로 인식하게 함.
+//														  // 무결성 == 무결하다, 문제없다
+//				System.out.println("PW : " + pw);
+//				map.put(id, pw);
+//				
+//				
+//				break;
+				
+				
+				
 			case 2:
 				//ID를 받아서 map에 있는 동일한 Id/pw 를 출력
 				System.out.println("조회하실 ID를 입력하세요 >>> ");
@@ -65,6 +88,16 @@ public class C02Prac {
 				}
 				
 				break;
+				
+//				### 선생님 해답 ###
+//				System.out.println("ID : ");
+//				id = sc.next();
+//				System.out.println("-------------확인------------");
+//				pw = map.get(id);
+//				System.out.println("ID : " + id + " PW : " + pw);
+//				
+//				break;
+				
 			case 3:
 				//ID를 받아서 map에 있는 동일한 id의 password를 변경 
 				
@@ -85,6 +118,22 @@ public class C02Prac {
 					}
 				}
 				break;
+				
+//				### 선생님 해답 ###
+//				System.out.print("ID : ");
+//				id = sc.next();
+//				System.out.print("PW : ");
+//				pw = sc.next();
+//				if(map.containsKey(id) && BCrypt.checkpw(pw, map.get(id))) {
+//					System.out.println("변경 PW : ");
+//					pw = sc.next();
+//					map.put(id, BCrypt.hashpw(pw, BCrypt.gensalt())); //다시 삽입 (최근에 삽입된 K : V 적용)
+//				}
+//				else {
+//					System.out.println("ID/PW가 일치하지 않습니다.");
+//				}
+//				break;
+				
 			case 4:
 				//ID를 받아서 map에 있는 동일한 id/pw를 삭제
 				
