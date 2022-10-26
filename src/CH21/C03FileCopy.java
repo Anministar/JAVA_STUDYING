@@ -25,6 +25,8 @@ public class C03FileCopy {
 			out.write(buff, 0, cnt); //배열 전달하면 배열을 그대로 전달 @ 0부터 cnt까지
 			out.flush(); // 남아있는 스트림 버퍼 공간 제거
 		}
+		in.close();
+		out.close();
 	}
 
 }

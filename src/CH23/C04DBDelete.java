@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class C01DBconn {
+public class C04DBDelete {
 
 	public static void main(String[] args) {
 		//연결관련 정보 저장용 변수
@@ -29,9 +29,24 @@ public class C01DBconn {
 			System.out.println("Driver Loading Success!!");
 			conn = DriverManager.getConnection(url, id, pw); //DB Connection 객체 받기
 			System.out.println("DB Connected...");
+//			pstmt = conn.prepareStatement("SQL쿼리문");
+			pstmt = conn.prepareStatement("DELETE from `shopdb`.`tbl_customer` where id = ?");
+			
+			pstmt.setInt(1, 5);
+			
+			int result = pstmt.executeUpdate(); //Insert나 delete, Update의 개수를 반환
+			if (result != 0) {
+				System.out.println("DELETE 성공");
+			}
+			else {
+				System.out.println("DELETE 실패");
+			}
+			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
+			try {pstmt.close();}catch(Exception e) {e.printStackTrace();}
 			try {conn.close();}catch(Exception e) {e.printStackTrace();} //문제없이 finally로 왔다면 conn의 객체를 제거함. 여기서도 예외처리를 해준거고
 		}
 		

@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class C01DBconn {
+public class C02DBInsert {
 
 	public static void main(String[] args) {
 		//연결관련 정보 저장용 변수
@@ -29,9 +29,29 @@ public class C01DBconn {
 			System.out.println("Driver Loading Success!!");
 			conn = DriverManager.getConnection(url, id, pw); //DB Connection 객체 받기
 			System.out.println("DB Connected...");
+//			pstmt = conn.prepareStatement("SQL쿼리문");
+			pstmt = conn.prepareStatement("INSERT INTO `shopdb`.`tbl_customer` VALUES (?, ?, ?, ?)");
+			
+			pstmt.setInt(1, 5);
+			pstmt.setString(2, "이지성");
+			pstmt.setString(3, "창녕");
+			pstmt.setString(4, "010-224-3333");
+			
+			
+			
+			int result = pstmt.executeUpdate(); //Insert나 delete, Update의 개수를 반환
+			if (result != 0) {
+				System.out.println("INSERT 성공");
+			}
+			else {
+				System.out.println("INSERT 실패");
+			}
+			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
+			try {pstmt.close();}catch(Exception e) {e.printStackTrace();}
 			try {conn.close();}catch(Exception e) {e.printStackTrace();} //문제없이 finally로 왔다면 conn의 객체를 제거함. 여기서도 예외처리를 해준거고
 		}
 		

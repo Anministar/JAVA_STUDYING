@@ -31,7 +31,7 @@ public class C08_1Jsoup {
 		for (int i = 0; i < elements.size(); i++) {
 
 			try {
-				if (elements.get(i).toString().contains("http")) {
+				if (elements.get(i).toString().contains("http")) { // elements안의 i번째 요소를 문자열로 가지고 와서 http를 포함하고 있는지
 					//elements안의 i번째 요소에서 src속성에 해당되는 값을 추출
 					imgUrl = elements.get(i).getElementsByAttribute("src").attr("src");
 				} else if (elements.get(i).toString().contains("//")) {
