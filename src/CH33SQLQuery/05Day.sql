@@ -1,0 +1,48 @@
+COMMIT;
+
+-- 실습용 테이블 생성
+CREATE TABLE TEST(
+NO NUMBER(3),
+NAME VARCHAR2(10),
+AGE NUMBER(3),
+GENDER VARCHAR(6)
+);
+
+-- 데이터 추가
+INSERT INTO TEST VALUES(1, 'JOKER', '28', 'M');
+-- 데이터 추가
+INSERT INTO TEST VALUES(2, 'ADAMS', '33', 'M');
+
+SELECT * FROM test;
+
+-- 세이브포인트 S1 지정
+SAVEPOINT S1;
+COMMIT;
+
+-- 데이터 추가
+INSERT INTO TEST VALUES(3, 'SMITH', '35', 'M');
+-- 세이브포인트 S2 지정
+SAVEPOINT S2;
+COMMIT;
+
+
+INSERT INTO TEST VALUES(4, 'MARRY', '40', 'W');
+INSERT INTO TEST VALUES(5, 'KIM', '45', 'M');
+SELECT * FROM test;
+
+ROLLBACK;
+-- COMMIT 이전으로 다 돌아감 (테이블의 구조 자체는 상관없는데, 값들이 다 사라짐.)
+
+ROLLBACK TO S2;
+SELECT * FROM test;
+
+ROLLBACK TO S1;
+SELECT * FROM test;
+
+ROLLBACK;
+SELECT * FROM test;
+
+
+
+
+
