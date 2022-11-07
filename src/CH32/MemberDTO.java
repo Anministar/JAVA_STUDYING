@@ -7,6 +7,10 @@ public class MemberDTO {
 		private String addr;
 		private String phone;
 		
+		public MemberDTO() {
+			
+		}
+		
 		
 		public MemberDTO(int no, String email, String addr, String phone) {
 			super();
