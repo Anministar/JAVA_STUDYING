@@ -8,8 +8,15 @@ public class BookService {
 	
 	BookDAO dao = BookDAO.getInstance();
 	
-	
-	
+	//싱글톤 패턴 코드 추가
+	private BookService instance;
+	public BookService getInstance() {
+		if(instance == null) {
+			instance = new BookService();
+		}
+		return instance;
+	}
+	public BookService() {}
 	
 	
 	// 도서 조회하기
@@ -19,10 +26,15 @@ public class BookService {
 	public boolean RegisterBook(BookDTO dto, int permission) { 				// Service는 어떤걸 등록할껀지 세부적으로 접근하는게 좋다.
 		
 		boolean isRegisterOK = true;
-		// 권한 체크(등록 가능한지 여부)
 		
+		// 권한 체크(등록 가능한지 여부)
 		if(permission >= 3) {
-			return dao.Insert(dto);
+			
+			int result = dao.Insert(dto);
+			if(result > 0) {
+				return true;
+			}
+			return false;
 		}
 		return false;
 	}

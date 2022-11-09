@@ -6,9 +6,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/새폴더/mysql-connector-j-8.0.31/mysql-connector-j-8.0.31.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/bcrypt-0.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Administrator/Downloads/jsoup-1.15.3.jar"/>
 	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="C:/정보처리과정평가/03 프로그래밍 언어 활용/External JAR/bcrypt-0.3.jar"/>
+	<classpathentry kind="lib" path="C:/정보처리과정평가/03 프로그래밍 언어 활용/External JAR/jsoup-1.15.3.jar"/>
+	<classpathentry kind="lib" path="C:/정보처리과정평가/03 프로그래밍 언어 활용/External JAR/mysql-connector-j-8.0.31/mysql-connector-j-8.0.31.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

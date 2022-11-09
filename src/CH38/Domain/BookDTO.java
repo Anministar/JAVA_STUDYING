@@ -1,6 +1,6 @@
 package CH38.Domain;
 
-public class BookDTO {
+public class BookDTO extends DTO{
 	private int bookCode;
 	private String bookName;
 	private boolean isLend;
@@ -10,6 +10,7 @@ public class BookDTO {
 		super();
 		this.bookCode = bookCode;
 		this.bookName = bookName;
+		
 		this.isLend = isLend;
 	}
 	

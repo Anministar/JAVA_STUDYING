@@ -6,10 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class BookDAO {
-	
-	
-	
+public class MemberDAO {
 	
 	//연결관련 정보 저장용 변수
 			String id = "root"; // DB연결 id
@@ -22,17 +19,17 @@ public class BookDAO {
 			ResultSet rs = null;				//쿼리결과(Select결과) 수신용 참조변수
 			
 			//싱글톤 패턴 코드 추가
-			private static BookDAO instance;
+			private static MemberDAO instance;
 			
-			public static BookDAO getInstance() {
+			public static MemberDAO getInstance() {
 				if( instance == null ) {
-					instance = new BookDAO();
+					instance = new MemberDAO();
 				}
 				return instance;
 			}
 			
 			
-			private BookDAO() {
+			private MemberDAO() {
 				// CONN객체 연결
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
@@ -48,14 +45,15 @@ public class BookDAO {
 			// 선택 조회하기
 			
 			// 등록하기
-			public int Insert(BookDTO dto) {
+			public int Insert(MemberDTO dto) {
 				// pstmt
 				int result = 0;
 				try {
-					pstmt = conn.prepareStatement("INSERT INTO `libdb`.`tbl_book` VALUES(?, ?, 1)"); // isLend == 1 == 대여가능, == 0 == 대여불가능 // 가정 : 책은 한권밖에 없음.
-					pstmt.setInt(1, dto.getBookCode());
-					pstmt.setString(2, dto.getBookName());
+					pstmt = conn.prepareStatement("INSERT INTO tbl_member VALUES(?, ?)");
+					pstmt.setString(1, dto.getMemId());
+					pstmt.setString(2, dto.getPwd());
 					result = pstmt.executeUpdate();
+					
 					
 				} catch (Exception e) {
 					e.printStackTrace();
