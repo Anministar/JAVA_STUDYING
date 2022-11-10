@@ -3,6 +3,7 @@ package CH38.Domain;
 public class MemberDTO extends DTO {
 	private String memId;
 	private String pwd;
+	private int role;	// 0 회원 , 1 사서
 	
 	
 	//Getter and Setter
@@ -19,7 +20,12 @@ public class MemberDTO extends DTO {
 		this.pwd = pwd;
 	}
 	
-	
+	public int getRole() {
+		return role;
+	}
+	public void setRole(int role) {
+		this.role = role;
+	}
 	//디폴트 생성자
 	public MemberDTO() {
 		// TODO Auto-generated constructor stub
@@ -29,13 +35,19 @@ public class MemberDTO extends DTO {
 		super();
 		this.memId = memId;
 		this.pwd = pwd;
+		this.role = 0;
 	}
 	
-	
+	public MemberDTO(String memId, String pwd, int role) {
+		super();
+		this.memId = memId;
+		this.pwd = pwd;
+		this.role = role;
+	}
+
 	//toString() 재정의
 	@Override
 	public String toString() {
-		return "MemberDTO [memId=" + memId + ", pwd=" + pwd + "]";
+		return "MemberDTO [memId=" + memId + ", pwd=" + pwd + ", role=" + role + "]";
 	}
-	
 }

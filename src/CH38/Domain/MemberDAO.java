@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 
 public class MemberDAO {
 	
@@ -60,6 +59,32 @@ public class MemberDAO {
 				}
 				return result;
 			}
+			//조회하기
+			
+			public MemberDTO Select(String id) {
+				// pstmt
+				MemberDTO dto = null;
+				try {
+					pstmt = conn.prepareStatement("SELECT * FROM tbl_member WHERE memid = ?");
+					pstmt.setString(1, id);
+					rs = pstmt.executeQuery();
+					if (rs != null) {
+						while(rs.next()) {
+							dto = new MemberDTO();
+							dto.setMemId(rs.getString("memID"));
+							dto.setPwd(rs.getString("pwd"));
+							dto.setRole(rs.getInt("role"));
+						}
+					}
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					try{rs.close();}catch(Exception e) {e.printStackTrace();}
+					try {pstmt.close();} catch(Exception e) {e.printStackTrace();}
+				}
+				return dto;
+			}
+			
 			// 수정하기
 			
 			// 삭제하기

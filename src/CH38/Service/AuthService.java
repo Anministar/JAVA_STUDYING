@@ -3,21 +3,21 @@ package CH38.Service;
 import CH38.Domain.MemberDAO;
 import CH38.Domain.MemberDTO;
 
-public class MemberService {
+public class AuthService {
 
 	MemberDAO dao = MemberDAO.getInstance();
 
 	// 싱글톤 패턴 코드 추가
-	private static  MemberService instance;
+	private static  AuthService instance;
 
-	public static MemberService getInstance() {
+	public static AuthService getInstance() {
 		if (instance == null) {
-			instance = new MemberService();
+			instance = new AuthService();
 		}
 		return instance;
 	}
 
-	private MemberService() {
+	private AuthService() {
 	}
 
 	
@@ -37,5 +37,24 @@ public class MemberService {
 		}
 		return false;
 	}
+	// (ID/PW 인증 이후 Role 전달)
+	public Integer LoginCheck(String id, String pwd) {
+		
+		MemberDTO dto = null;
+		dto = dao.Select(id);
+		if(dto == null) {
+			return null;
+		}
+		
+		//ID 일치 PW일치여부 확인
+		if(id.equals(dto.getMemId()) && pwd.equals(dto.getPwd())) {
+			
+			return dto.getRole();
+		}
+			
+		//role 반환 (1 or 2 or Null)
+		return null;
+	}
+
 
 }
