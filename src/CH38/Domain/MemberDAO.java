@@ -33,7 +33,7 @@ public class MemberDAO {
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					conn = DriverManager.getConnection(url, id, pw);
-					System.out.println("Connected...");
+					System.out.println("MEMBER DAO Connected...");
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

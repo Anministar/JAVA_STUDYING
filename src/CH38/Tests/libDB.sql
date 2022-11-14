@@ -57,3 +57,27 @@ INSERT INTO `libdb`.`tbl_member` VALUES('mem1', '1111', 1);
 INSERT INTO `libdb`.`tbl_member` VALUES('mgr1', '1111', 2)
 SELECT * FROM `libdb`.`tbl_member`;
 
+
+-- 2022/11/14 MON
+SELECT * FROM tbl_book;
+SELECT * FROM tbl_lend;
+SELECT * FROM tbl_member;
+
+DELETE FROM tbl_book;
+DELETE FROM tbl_lend;
+
+INSERT INTO tbl_book VALUES(1010, '자바의 정석1', 1);
+INSERT INTO tbl_book VALUES(1011, '자바의 정석2', 1);
+INSERT INTO tbl_book VALUES(2000, 'DoItJava', 1);
+-- --------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+

@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 public class BookDAO {
 	
@@ -37,7 +38,7 @@ public class BookDAO {
 				try {
 					Class.forName("com.mysql.cj.jdbc.Driver");
 					conn = DriverManager.getConnection(url, id, pw);
-					System.out.println("Connected...");
+					System.out.println("BOOK DAO Connected...");
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
@@ -122,11 +123,39 @@ public class BookDAO {
 				return result;
 			}
 			// 삭제하기
+
 			
-			
-	
-	
-	
+			// 완성하기!!
+			public ArrayList<BookDTO> SelectAll() {
+				ArrayList<BookDTO> list = new ArrayList<BookDTO> ();
+				BookDTO dto = null;
+				
+				try {
+					pstmt = conn.prepareStatement("SELECT * FROM tbl_book");
+					rs = pstmt.executeQuery();
+					if(rs != null) {
+						while (rs.next()) {
+							dto = new BookDTO();
+							dto.setBookCode(rs.getInt("bookcode"));
+							dto.setBookName(rs.getString("bookname"));
+							int islend = rs.getInt("isLend");
+							if(islend == 1) {
+								dto.setLend(true);
+							}
+							list.add(dto);
+						}
+					}
+					
+				} catch (Exception e) {
+					e.printStackTrace();
+				} finally {
+					try{rs.close();}catch(Exception e) {e.printStackTrace();}
+					try {pstmt.close();} catch(Exception e) {e.printStackTrace();}
+				}
+				return list;
+				
+				
+			}
 	
 	
 }

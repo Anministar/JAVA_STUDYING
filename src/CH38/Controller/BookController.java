@@ -40,6 +40,9 @@ public class BookController implements SubController{
 		case 4: // 도서 삭제
 			System.out.println("도서삭제 서비스 요청");
 			break;
+		case 5: // 도서 전체 조회
+			obj = service.ShowAllBook();
+			break;
 		default:
 			System.out.println("잘못된 서비스 요청입니다.");
 		}

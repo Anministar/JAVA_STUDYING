@@ -1,7 +1,10 @@
 package CH38.Service;
 
+import java.util.ArrayList;
+
 import CH38.Domain.BookDAO;
 import CH38.Domain.BookDTO;
+import CH38.Domain.MemberDTO;
 
 public class BookService {
 	
@@ -37,6 +40,15 @@ public class BookService {
 			return false;
 		}
 		return false;
+	}
+	
+	
+	
+	
+	public ArrayList<BookDTO> ShowAllBook() {
+		ArrayList<BookDTO> list = dao.SelectAll();
+		
+		return list;
 	}
 	
 	// 도서 수정하기

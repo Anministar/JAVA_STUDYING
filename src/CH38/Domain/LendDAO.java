@@ -32,7 +32,7 @@ public class LendDAO {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager.getConnection(url, id, pw);
-			System.out.println("Connected...");
+			System.out.println("LEND DAO Connected...");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -54,11 +54,14 @@ public class LendDAO {
 
 		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			try {pstmt.close();} catch(Exception e) {e.printStackTrace();}
 		}
 
 		return result;
 	}
-
+	
+	//트랜젝션
 	public int Insert(BookDTO bdto, LendDTO ldto) {
 		// pstmt
 		int result = 0;
@@ -79,24 +82,27 @@ public class LendDAO {
 			
 			
 			// tbl_lend 의 대여 정보 추가
-//			pstmt = conn.prepareStatement("INSERT INTO `libdb`.`tbl_Lend` VALUES(null, ?, ?, ?, ?)");
-//			pstmt.setInt(1, ldto.getBookcode());
-//			pstmt.setString(2, ldto.getMemId());
-//			pstmt.setString(3, ldto.getStartDate());
-//			pstmt.setString(4, ldto.getEndDate());
-//			result = pstmt.executeUpdate();
-			throw new SQLException(); //SQL 예외발생!!
+			pstmt = conn.prepareStatement("INSERT INTO `libdb`.`tbl_Lend` VALUES(null, ?, ?, ?, ?)");
+			pstmt.setInt(1, ldto.getBookcode());
+			pstmt.setString(2, ldto.getMemId());
+			pstmt.setString(3, ldto.getStartDate());
+			pstmt.setString(4, ldto.getEndDate());
+			result = pstmt.executeUpdate();
+//			throw new SQLException(); //SQL 예외발생!!
 			
-//			conn.commit();
+			conn.commit();
 
 		} catch (Exception e) {
 			e.printStackTrace();
+			result = 0; // 위에 쿼리문에서 이상없으면 result에 담고, 밑 쿼리문에서 이상이 생기면 catch구문으로 넘어와 result에 0을 담음.
 			try {
 				conn.rollback();
 			} catch (Exception e2) {
 				e2.printStackTrace();
 			}
 
+		} finally {
+			try {pstmt.close();} catch(Exception e) {e.printStackTrace();}
 		}
 		return result;
 
