@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-16T08:17:14.703Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="EtW_R4zmNxTqE0A_aPTd" version="20.5.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-11-16T08:35:23.662Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="h5UbxiogCfPwdKg_2HqR" version="20.5.3" type="github" pages="5">
   <diagram id="LRee3-vCbLJE4PQT-OXH" name="USECASE DIAGRAM">
     <mxGraphModel dx="2188" dy="1222" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -889,7 +889,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Z5ojsEFI04XgelQWrxfU" name="SEQUENCE DIAGRAM">
-    <mxGraphModel dx="1673" dy="934" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
+    <mxGraphModel dx="3555" dy="1985" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1653,6 +1653,773 @@
         </mxCell>
         <mxCell id="P4a1sSQNRqSieqrDUod_-1" value="// 트랜젝션을 이용한 rollback() 처리 필요" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="2175" y="115" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-1" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="2785" width="20" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-2" value="owner" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="2755" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-3" value="멤버예약관리" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="490" y="2785" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-4" value="숙소등록 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-3">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="-240" y="106" as="sourcePoint" />
+            <mxPoint x="200" y="106" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-5" value="숙소등록" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="650" y="2785" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-6" value="권한 여부 확인" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-5">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="39" y="132" as="sourcePoint" />
+            <mxPoint x="-266" y="132" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-7" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-5">
+          <mxGeometry x="45" y="100" width="10" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-8" value="인증" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="2785" width="100" height="420" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-8">
+          <mxGeometry x="45.00000000000001" y="133" width="10" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-10" value="권한 확인 결과 반환" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="387.25" y="2956" as="sourcePoint" />
+            <mxPoint x="690" y="2955" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-11" value="숙소등록 결과 반환" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690.1900000000005" y="2984" as="sourcePoint" />
+            <mxPoint x="249.5" y="2984" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="376" y="2844" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-13" value="로그인 결과 반환" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="2873.31" as="sourcePoint" />
+            <mxPoint x="249.81034482758605" y="2873.31" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-14" value="로그인 시도" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="250" y="2846" as="sourcePoint" />
+            <mxPoint x="370" y="2846" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-15" value="조회/수정/삭제" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="486" y="2760" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-16" value="권한 확인 결과 반환" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="3112" as="sourcePoint" />
+            <mxPoint x="530" y="3112" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-17" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="375" y="3071" width="10" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-18" value="예약관리 결과 반환" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="534" y="3150" as="sourcePoint" />
+            <mxPoint x="248.81034482758605" y="3150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="534" y="3032" width="10" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-20" value="멤버 예약관리 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="249" y="3042" as="sourcePoint" />
+            <mxPoint x="529" y="3042" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-21" value="권한 여부 확인" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="535" y="3081" as="sourcePoint" />
+            <mxPoint x="390" y="3081" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-22" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="245" y="1945" width="20" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-23" value="회원" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="230" y="1915" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-24" value="예약관리" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="495" y="1945" width="100" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-25" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-24">
+          <mxGeometry x="47" y="456" width="7.17" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-26" value="로그인 상태 결과 반환" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-94" y="510" as="sourcePoint" />
+            <mxPoint x="46" y="510" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-23.5" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-27" value="로그인상태확인" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-24">
+          <mxGeometry x="-82" y="600" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-28" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-24">
+          <mxGeometry x="47" y="180" width="8.46" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-29" value="숙소 예약 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-24">
+          <mxGeometry x="-0.0688" width="80" relative="1" as="geometry">
+            <mxPoint x="-233.67647058823536" y="193" as="sourcePoint" />
+            <mxPoint x="47" y="193" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="-43" y="193" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-30" value="로그인 상태 결과 반환" style="endArrow=none;html=1;rounded=0;startSize=10;endSize=10;dashed=1;startArrow=block;startFill=1;entryX=0.138;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-24">
+          <mxGeometry x="-0.0797" y="-10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="45.47000000000003" y="240" as="sourcePoint" />
+            <mxPoint x="-69.52999999999997" y="240" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-99.47000000000003" y="240" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-31" value="숙소 조회 결과 반환" style="endArrow=none;html=1;rounded=0;startSize=10;endSize=10;dashed=1;startArrow=block;startFill=1;endFill=0;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-24">
+          <mxGeometry x="-0.037" y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="60" y="285" as="sourcePoint" />
+            <mxPoint x="195" y="285" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="155.76999999999998" y="285" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-32" value="결제 방식 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-24" target="1MTRHmEO5i5ulMq7n2ot-22">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="47" y="300" as="sourcePoint" />
+            <mxPoint x="-106.47350000000006" y="300.1600000000001" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-73" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-33" value="로그인" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="335" y="1945" width="100" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-34" value="로그인 상태 확인" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;entryX=1.098;entryY=0.229;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-33" target="1MTRHmEO5i5ulMq7n2ot-35">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="216" y="480" as="sourcePoint" />
+            <mxPoint x="51" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-35" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-33">
+          <mxGeometry x="46.37" y="470" width="9.25" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-36" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-33">
+          <mxGeometry x="46.370000000000005" y="620" width="9.25" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-37" value="예약 취소 요청" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-33">
+          <mxGeometry x="1" y="570" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-38" value="로그인 결과" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;endSize=8;rounded=0;endFill=1;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-33">
+          <mxGeometry x="-0.0073" relative="1" as="geometry">
+            <mxPoint x="54.25" y="162" as="sourcePoint" />
+            <mxPoint x="-80.67647058823536" y="162" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-35.25" y="162" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-39" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-33">
+          <mxGeometry x="45.370000000000005" y="130" width="9.25" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-40" value="로그인 시도" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-33">
+          <mxGeometry x="0.0056" width="80" relative="1" as="geometry">
+            <mxPoint x="-80.67647058823536" y="132" as="sourcePoint" />
+            <mxPoint x="40" y="132" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-41" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-33">
+          <mxGeometry x="46.370000000000005" y="210" width="9.25" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-42" value="숙소조회" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="645" y="1945" width="100" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-43" value="이용가능 숙소 조회 요청" style="html=1;verticalAlign=bottom;endArrow=classicThin;endSize=8;rounded=0;endFill=1;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-42">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-95" y="260" as="sourcePoint" />
+            <mxPoint x="40" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-60" y="260" />
+              <mxPoint x="-30" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-44" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-42">
+          <mxGeometry x="45.77" y="250" width="8.46" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-45" value="예약조회 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0688" width="80" relative="1" as="geometry">
+            <mxPoint x="255.32352941176487" y="2405" as="sourcePoint" />
+            <mxPoint x="536" y="2405" as="targetPoint" />
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="446" y="2405" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-46" value="예약조회 결과반환" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0688" relative="1" as="geometry">
+            <mxPoint x="536" y="2485" as="sourcePoint" />
+            <mxPoint x="255.32352941176487" y="2485" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="446" y="2485" />
+              <mxPoint x="426" y="2485" />
+            </Array>
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-47" value="조회/예약/취소" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="495" y="1915" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-48" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="536" y="2567" as="sourcePoint" />
+            <mxPoint x="396" y="2567" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-49" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="266" y="2545" as="sourcePoint" />
+            <mxPoint x="547.085" y="2545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-50" value="로그인상태걀과반환" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" source="1MTRHmEO5i5ulMq7n2ot-36">
+          <mxGeometry x="0.0688" relative="1" as="geometry">
+            <mxPoint x="543" y="2655" as="sourcePoint" />
+            <mxPoint x="536" y="2605" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="416" y="2605" />
+              <mxPoint x="486" y="2605" />
+            </Array>
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-51" value="예약 취소 결과 반환" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1">
+          <mxGeometry x="0.0688" relative="1" as="geometry">
+            <mxPoint x="546.6800000000003" y="2635" as="sourcePoint" />
+            <mxPoint x="255.32352941176487" y="2635" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="456.68" y="2635" />
+              <mxPoint x="436.68" y="2635" />
+            </Array>
+            <mxPoint x="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-52" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="1MTRHmEO5i5ulMq7n2ot-22" target="1MTRHmEO5i5ulMq7n2ot-42">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="264.32352941176464" y="2129.508" as="sourcePoint" />
+            <mxPoint x="852.2928000000002" y="2129.508" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="585" y="2015" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-53" value="숙소 조회 결과 반환" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;endSize=8;rounded=0;endFill=1;" edge="1" parent="1" source="1MTRHmEO5i5ulMq7n2ot-42" target="1MTRHmEO5i5ulMq7n2ot-22">
+          <mxGeometry x="-0.0481" relative="1" as="geometry">
+            <mxPoint x="545" y="2531" as="sourcePoint" />
+            <mxPoint x="264.32352941176464" y="2531" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="545" y="2045" />
+              <mxPoint x="445" y="2045" />
+              <mxPoint x="355" y="2045" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-54" value="숙소 조회 요청" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="425" y="1990" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-55" value="로그인 상태 확인" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;entryX=1.098;entryY=0.229;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="1MTRHmEO5i5ulMq7n2ot-41">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="540" y="2164" as="sourcePoint" />
+            <mxPoint x="96" y="2055" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="425" y="2164" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-56" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="884" y="1950" width="20" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-57" value="결제 시스템" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="845" y="1910" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-58" value="결제 승인 요청" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="1MTRHmEO5i5ulMq7n2ot-56">
+          <mxGeometry x="0.034" y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="555" y="2295" as="sourcePoint" />
+            <mxPoint x="675" y="2295" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-59" value="결제방식 결과 응답" style="endArrow=none;html=1;rounded=0;startSize=10;endSize=10;dashed=1;startArrow=block;startFill=1;entryX=0.138;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0017" y="-10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="2276" as="sourcePoint" />
+            <mxPoint x="255" y="2276" as="targetPoint" />
+            <Array as="points" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-60" value="조회/등록/수정/삭제" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="625" y="1910" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-61" value="결제 승인 결과 응답" style="endArrow=none;html=1;rounded=0;startSize=10;endSize=10;dashed=1;startArrow=block;startFill=1;" edge="1" parent="1">
+          <mxGeometry x="-0.0251" y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="555" y="2319" as="sourcePoint" />
+            <mxPoint x="893.5" y="2319" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650.77" y="2319" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-62" value="숙소 예약 요청 결과 반환" style="endArrow=none;html=1;rounded=0;startSize=10;endSize=10;dashed=1;startArrow=block;startFill=1;" edge="1" parent="1">
+          <mxGeometry x="-0.0528" y="10" width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="255" y="2334.5" as="sourcePoint" />
+            <mxPoint x="540" y="2335" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="350.77" y="2334.5" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-63" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="2810" width="20" height="770" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-64" value="owner" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="2780" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-65" value="멤버예약관리" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1290" y="2810" width="100" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-66" value="숙소등록 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-65">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="-240" y="106" as="sourcePoint" />
+            <mxPoint x="200" y="106" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-67" value="숙소관리" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="2810" width="100" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-68" value="권한 여부 확인" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-67">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="39" y="132" as="sourcePoint" />
+            <mxPoint x="-266" y="132" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-69" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-67">
+          <mxGeometry x="45" y="100" width="10" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-70" value="인증" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1130" y="2810" width="100" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-71" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-70">
+          <mxGeometry x="45.00000000000001" y="133" width="10" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-72" value="권한 확인 결과 반환" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;endSize=8;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1187.25" y="2981" as="sourcePoint" />
+            <mxPoint x="1490" y="2980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-73" value="숙소등록 결과 반환" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;endSize=8;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1490.1900000000005" y="3009" as="sourcePoint" />
+            <mxPoint x="1049.5" y="3009" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-74" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1176" y="2869" width="10" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-75" value="로그인 결과 반환" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;endSize=8;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1170" y="2898.31" as="sourcePoint" />
+            <mxPoint x="1049.810344827586" y="2898.31" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-76" value="로그인 시도" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1050" y="2871" as="sourcePoint" />
+            <mxPoint x="1170" y="2871" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-77" value="예약조회" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1301" y="2785" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-78" value="권한 확인 결과 반환" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;endSize=8;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="3419" as="sourcePoint" />
+            <mxPoint x="1330" y="3419" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-79" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1175" y="3378" width="10" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-80" value="예약관리 결과 반환" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;endSize=8;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1334" y="3457" as="sourcePoint" />
+            <mxPoint x="1048.810344827586" y="3457" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-81" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1334" y="3339" width="10" height="123" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-82" value="멤버 예약관리 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1049" y="3349" as="sourcePoint" />
+            <mxPoint x="1329" y="3349" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-83" value="권한 여부 확인" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1335" y="3387.9999999999995" as="sourcePoint" />
+            <mxPoint x="1190" y="3387.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-84" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1650" y="1945" width="20" height="1275" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-85" value="Admin" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1630" y="1915" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-86" value="등록/수정/삭제" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1450" y="2785" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-87" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1176" y="3080" width="10" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-88" value="권한 여부 확인" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1492" y="3089" as="sourcePoint" />
+            <mxPoint x="1187" y="3089" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-89" value="권한 확인 결과 반환" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;endSize=8;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190.25" y="3122" as="sourcePoint" />
+            <mxPoint x="1493" y="3121" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-90" value="숙소수정 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1055" y="3050" as="sourcePoint" />
+            <mxPoint x="1495" y="3050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-91" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1174" y="3232" width="10" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-92" value="권한 여부 확인" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1490" y="3241.0000000000005" as="sourcePoint" />
+            <mxPoint x="1185" y="3241.0000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-93" value="권한 확인 결과 반환" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;endSize=8;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1188.25" y="3274" as="sourcePoint" />
+            <mxPoint x="1491" y="3272.9999999999995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-94" value="숙소삭제 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1053" y="3202" as="sourcePoint" />
+            <mxPoint x="1493" y="3202" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-95" value="숙소수정 결과 반환" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;endSize=8;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1491.1900000000005" y="3161.0000000000005" as="sourcePoint" />
+            <mxPoint x="1050.5" y="3161.0000000000005" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-96" value="숙소삭제 결과 반환" style="html=1;verticalAlign=bottom;endArrow=block;dashed=1;endSize=8;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1493.1900000000005" y="3300" as="sourcePoint" />
+            <mxPoint x="1052.5" y="3300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-97" value="인증" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1750" y="1945" width="100" height="1275" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-98" value="로그인 인증 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-97" target="1MTRHmEO5i5ulMq7n2ot-84">
+          <mxGeometry x="-0.0071" y="-10" width="160" relative="1" as="geometry">
+            <mxPoint x="49.5" y="105" as="sourcePoint" />
+            <mxPoint x="-90.5" y="105" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="10" y="105" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-99" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-97">
+          <mxGeometry x="45" y="65" width="10" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-100" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-97">
+          <mxGeometry x="45" y="175" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-101" value="멤버관리" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="1950" width="100" height="1270" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-102" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-101">
+          <mxGeometry x="45" y="145" width="10" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-103" value="예약 조회 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-101">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="-250" y="547" as="sourcePoint" />
+            <mxPoint x="190" y="547" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-104" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-101">
+          <mxGeometry x="-114.5" y="565" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-105" value="권한 확인 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-101">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="199.5" y="569" as="sourcePoint" />
+            <mxPoint x="-100" y="569" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-106" value="로그인 인증 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-101">
+          <mxGeometry x="0.0647" y="15" width="160" relative="1" as="geometry">
+            <mxPoint x="-99" y="603" as="sourcePoint" />
+            <mxPoint x="190" y="603" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-109.5" y="603" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-107" value="예약 조회 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-101">
+          <mxGeometry x="-0.0071" y="-10" width="160" relative="1" as="geometry">
+            <mxPoint x="199.5" y="635" as="sourcePoint" />
+            <mxPoint x="-250" y="635" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1" y="635" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-108" value="예약관리" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="2060" y="1950" width="100" height="1275" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-109" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-108">
+          <mxGeometry x="45" y="425" width="10" height="455" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-110" value="멤버조회/삭제" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1910" y="1920" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-111" value="예약승인/조회/수정/취소" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2035" y="1920" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-112" value="로그인 인증 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1" source="1MTRHmEO5i5ulMq7n2ot-84">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1670" y="2010" as="sourcePoint" />
+            <mxPoint x="1790" y="2012" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-113" value="멤버 조회 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1661.5" y="2096.5" as="sourcePoint" />
+            <mxPoint x="1950" y="2097" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-114" value="권한 확인 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1959.5" y="2124" as="sourcePoint" />
+            <mxPoint x="1810" y="2124" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-115" value="로그인 인증 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry x="0.0647" y="15" width="160" relative="1" as="geometry">
+            <mxPoint x="1810.5" y="2158" as="sourcePoint" />
+            <mxPoint x="1950" y="2158" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1800" y="2158" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-116" value="멤버 조회 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1" source="1MTRHmEO5i5ulMq7n2ot-101" target="1MTRHmEO5i5ulMq7n2ot-84">
+          <mxGeometry x="-0.0071" y="-10" width="160" relative="1" as="geometry">
+            <mxPoint x="1950" y="2190" as="sourcePoint" />
+            <mxPoint x="1810" y="2190" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1910.5" y="2190" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-117" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1794" y="2249" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-118" value="멤버 삭제 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1660.5" y="2225.5" as="sourcePoint" />
+            <mxPoint x="1950" y="2226" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-119" value="권한 확인 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1958.500000000001" y="2253" as="sourcePoint" />
+            <mxPoint x="1810" y="2253" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-120" value="로그인 인증 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry x="0.0647" y="15" width="160" relative="1" as="geometry">
+            <mxPoint x="1809.5" y="2287" as="sourcePoint" />
+            <mxPoint x="1950" y="2287" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1799" y="2287" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-121" value="멤버 삭제 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry x="-0.0071" y="-10" width="160" relative="1" as="geometry">
+            <mxPoint x="1958.500000000001" y="2319" as="sourcePoint" />
+            <mxPoint x="1658.5" y="2319" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1909.5" y="2319" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-122" value="멤버의 예약 요청의 승인처리 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1660" y="2372" as="sourcePoint" />
+            <mxPoint x="2100" y="2375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-123" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1795.5" y="2390" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-124" value="권한 확인 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1" source="1MTRHmEO5i5ulMq7n2ot-108">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1960" y="2394" as="sourcePoint" />
+            <mxPoint x="1810" y="2394" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-125" value="로그인 인증 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry x="0.0647" y="15" width="160" relative="1" as="geometry">
+            <mxPoint x="1811.000000000001" y="2428" as="sourcePoint" />
+            <mxPoint x="2100" y="2428" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1800.5" y="2428" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-126" value="예약 수정 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1661" y="2610" as="sourcePoint" />
+            <mxPoint x="2100" y="2610" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-127" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1796.5" y="2628" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-128" value="권한 확인 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="2110.5" y="2632" as="sourcePoint" />
+            <mxPoint x="1810" y="2632" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-129" value="로그인 인증 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry x="0.0647" y="15" width="160" relative="1" as="geometry">
+            <mxPoint x="1812" y="2666" as="sourcePoint" />
+            <mxPoint x="2100" y="2666" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1801.5" y="2666" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-130" value="예약 수정 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry x="-0.0071" y="-10" width="160" relative="1" as="geometry">
+            <mxPoint x="2110.5" y="2697.9999999999995" as="sourcePoint" />
+            <mxPoint x="1661" y="2697.9999999999995" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1912" y="2698" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-131" value="예약 취소 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="1662" y="2727" as="sourcePoint" />
+            <mxPoint x="2100" y="2727" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-132" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1797.5" y="2745" width="10" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-133" value="권한 확인 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="2111.5" y="2749" as="sourcePoint" />
+            <mxPoint x="1810" y="2749" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-134" value="로그인 인증 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry x="0.0647" y="15" width="160" relative="1" as="geometry">
+            <mxPoint x="1813" y="2782.9999999999995" as="sourcePoint" />
+            <mxPoint x="2100" y="2782.9999999999995" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1802.5" y="2783" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-135" value="예약 취소 결과 반환" style="endArrow=block;endSize=8;dashed=1;html=1;rounded=0;endFill=1;" edge="1" parent="1">
+          <mxGeometry x="-0.0071" y="-10" width="160" relative="1" as="geometry">
+            <mxPoint x="2111.5" y="2815" as="sourcePoint" />
+            <mxPoint x="1662" y="2815" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1913" y="2815" />
+            </Array>
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-136" value="// 트랜젝션을 이용한 rollback() 처리 필요" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2200" y="1920" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-137" value="숙소조회" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="2230" y="1950" width="142.76" height="1085" as="geometry" />
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-138" value="이용가능 숙소 조회 요청" style="html=1;verticalAlign=bottom;endArrow=classicThin;endSize=8;rounded=0;endFill=1;" edge="1" parent="1MTRHmEO5i5ulMq7n2ot-137">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-95" y="260" as="sourcePoint" />
+            <mxPoint x="40" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-60" y="260" />
+              <mxPoint x="-30" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1MTRHmEO5i5ulMq7n2ot-139" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1MTRHmEO5i5ulMq7n2ot-137">
+          <mxGeometry x="45.77" y="250" width="8.46" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
