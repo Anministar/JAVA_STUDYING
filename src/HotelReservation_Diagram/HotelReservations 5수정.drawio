@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-11-16T03:10:44.035Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="pYuG8cU_KW5sVjboLqZQ" version="20.5.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-11-16T03:19:16.892Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="-vSGp67qtH1Io1yH5A-T" version="20.5.3" type="github" pages="5">
   <diagram id="LRee3-vCbLJE4PQT-OXH" name="USECASE DIAGRAM">
     <mxGraphModel dx="2031" dy="1134" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="O2pJUHBRTEmICEQSv-FM-2" value="호텔 예약" style="shape=umlFrame;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="540" y="1530" width="1575" height="1015" as="geometry" />
+          <mxGeometry x="430" y="160" width="1480" height="1105" as="geometry" />
         </mxCell>
         <mxCell id="YhjqENg5tmqZNu0jKvC--1" value="USECASE DIAGRAM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="90" y="10" width="140" height="30" as="geometry" />
@@ -17,13 +17,13 @@
           <mxGeometry x="20" y="60" width="320" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YhjqENg5tmqZNu0jKvC--7" value="Member" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
-          <mxGeometry x="375" y="560" width="40" height="70" as="geometry" />
+          <mxGeometry x="360" y="560" width="40" height="70" as="geometry" />
         </mxCell>
         <mxCell id="YhjqENg5tmqZNu0jKvC--8" value="Owner&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1930" y="870" width="40" height="70" as="geometry" />
+          <mxGeometry x="1940" y="870" width="40" height="70" as="geometry" />
         </mxCell>
         <mxCell id="YhjqENg5tmqZNu0jKvC--13" value="Non-Member" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" parent="1" vertex="1">
-          <mxGeometry x="375" y="730" width="40" height="70" as="geometry" />
+          <mxGeometry x="360" y="730" width="40" height="70" as="geometry" />
         </mxCell>
         <mxCell id="B9cGgUfPz6B5OdqblHFs-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=open;startFill=0;endArrow=none;endFill=0;startSize=10;endSize=10;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="B9cGgUfPz6B5OdqblHFs-6">
           <mxGeometry relative="1" as="geometry">
@@ -124,7 +124,7 @@
             <mxPoint x="555" y="765" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="YhjqENg5tmqZNu0jKvC--80" value="&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=12;endFill=0;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;startArrow=open;startFill=0;" parent="1" source="YhjqENg5tmqZNu0jKvC--47" target="YhjqENg5tmqZNu0jKvC--31" edge="1">
+        <mxCell id="YhjqENg5tmqZNu0jKvC--80" value="&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;" style="endArrow=none;dashed=1;html=1;rounded=0;fontSize=12;endFill=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;startArrow=open;startFill=0;" parent="1" source="YhjqENg5tmqZNu0jKvC--47" target="YhjqENg5tmqZNu0jKvC--31" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1110" y="500" as="sourcePoint" />
             <mxPoint x="900" y="580" as="targetPoint" />
@@ -255,10 +255,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="SupQdwml2Qryj_TKrUDy-12" value="&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;" style="endArrow=open;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;endFill=0;dashed=1;endSize=10;" parent="1" source="YhjqENg5tmqZNu0jKvC--36" target="YhjqENg5tmqZNu0jKvC--47" edge="1">
-          <mxGeometry x="-0.2483" y="4" width="50" height="50" relative="1" as="geometry">
+          <mxGeometry x="-0.0269" y="-7" width="50" height="50" relative="1" as="geometry">
             <mxPoint x="906.8198051533946" y="438.78679656440363" as="sourcePoint" />
             <mxPoint x="1158.1801948466054" y="351.21320343559637" as="targetPoint" />
-            <mxPoint as="offset" />
+            <mxPoint x="-1" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="SupQdwml2Qryj_TKrUDy-36" value="&amp;lt;includes&amp;gt;" style="endArrow=none;html=1;rounded=0;endSize=10;entryX=0;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;dashed=1;endFill=0;startArrow=open;startFill=0;" parent="1" source="YhjqENg5tmqZNu0jKvC--49" target="YhjqENg5tmqZNu0jKvC--31" edge="1">
@@ -309,7 +309,7 @@
             <mxPoint x="865" y="260" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="tjA7VHKbfEr3mHhEBpgr-16" value="&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;" style="endArrow=none;html=1;rounded=0;startSize=10;endSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;endFill=0;startArrow=open;startFill=0;" parent="1" target="YhjqENg5tmqZNu0jKvC--31" edge="1">
+        <mxCell id="tjA7VHKbfEr3mHhEBpgr-16" value="&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;" style="endArrow=none;html=1;rounded=0;startSize=10;endSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;endFill=0;startArrow=open;startFill=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" target="YhjqENg5tmqZNu0jKvC--31" edge="1" source="YhjqENg5tmqZNu0jKvC--35">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1105" y="720" as="sourcePoint" />
             <mxPoint x="1360" y="500" as="targetPoint" />
@@ -323,9 +323,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="tjA7VHKbfEr3mHhEBpgr-18" value="&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;" style="endArrow=open;html=1;rounded=0;dashed=1;startSize=10;endSize=10;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=0;" parent="1" source="YhjqENg5tmqZNu0jKvC--30" target="YhjqENg5tmqZNu0jKvC--47" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
+          <mxGeometry x="0.1258" y="-1" width="50" height="50" relative="1" as="geometry">
             <mxPoint x="975" y="550" as="sourcePoint" />
             <mxPoint x="1062.0298299697897" y="241.07225655907223" as="targetPoint" />
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="tjA7VHKbfEr3mHhEBpgr-20" value="&amp;lt;&amp;lt;includes&amp;gt;&amp;gt;" style="endArrow=open;html=1;rounded=0;dashed=1;startSize=10;endSize=10;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endFill=0;" parent="1" source="tjA7VHKbfEr3mHhEBpgr-2" target="YhjqENg5tmqZNu0jKvC--47" edge="1">
@@ -397,10 +398,10 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Wc8GbwjAeZDyRrW3RM1n-1" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Owner는 숙소등록과 멤버예약관리(조회,수정,삭제)를 할수있다.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Non-Member과 Member는 숙소등록과 멤버예약관리를 할수없다.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Owner는 회원가입을 할 수 없다.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 회원가입을 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 회원가입을 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는 나의정보를 확인할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 나의정보를 확인할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 나의정보(수정,삭제)를 확인할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는 숙소조회를 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 숙소조회 (특가조회,전체조회,상세조회,위치검색)&lt;span style=&quot;background-color: initial;&quot;&gt;를 할 수 있다.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 숙소조회(특가조회,전체조회,상세조회,위치검색)를 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는 리뷰작성을 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 리뷰작성을 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 리뷰작성을 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는 숙소예약을 할수없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 숙소예약을 할수없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 숙소예약을 할수있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는 예약조회를 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 예약조회를 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 예약조회를 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는 예약취소를 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 예약취소를 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 예약취소를 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;리뷰작성, 숙소예약, 예약조회, 예약취소, 멤버예약관리, 숙소등록 은&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;로그인 인증 후 이용할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;숙소예약은 결제 후 이용할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;로그인방식에는 페이스북,Google,Apple,E-Mail등이 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;결제방식에는 무통장입금, 카드결제 가 있다.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="20" y="80" width="440" height="570" as="geometry" />
+          <mxGeometry x="10" y="90" width="440" height="570" as="geometry" />
         </mxCell>
         <mxCell id="B9cGgUfPz6B5OdqblHFs-1" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1930" y="540" width="40" height="70" as="geometry" />
+          <mxGeometry x="1940" y="540" width="40" height="70" as="geometry" />
         </mxCell>
         <mxCell id="B9cGgUfPz6B5OdqblHFs-3" value="Facebook" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="665" y="1060" width="50" height="40" as="geometry" />
@@ -440,6 +441,9 @@
             <mxPoint x="1940" y="903.3333333333333" as="sourcePoint" />
             <mxPoint x="1160" y="1030" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="B9cGgUfPz6B5OdqblHFs-22" value="//숙소 등록 승인" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2010" y="570" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
