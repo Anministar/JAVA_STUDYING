@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-16T08:09:04.966Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="ayXhvOyhXBATV95DNRqW" version="20.5.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-11-16T08:17:14.703Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="EtW_R4zmNxTqE0A_aPTd" version="20.5.3" type="github" pages="5">
   <diagram id="LRee3-vCbLJE4PQT-OXH" name="USECASE DIAGRAM">
     <mxGraphModel dx="2188" dy="1222" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -1476,7 +1476,7 @@
         <mxCell id="FUILbuaNVeQA_zwxL68_-50" value="로그인 인증 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1" source="FUILbuaNVeQA_zwxL68_-22">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="1660" y="175" as="sourcePoint" />
-            <mxPoint x="1792.5" y="176.5" as="targetPoint" />
+            <mxPoint x="1780" y="177" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="FUILbuaNVeQA_zwxL68_-51" value="멤버 조회 요청" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;endSize=8;" edge="1" parent="1">
@@ -1650,6 +1650,9 @@
             </Array>
             <mxPoint x="1" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="P4a1sSQNRqSieqrDUod_-1" value="// 트랜젝션을 이용한 rollback() 처리 필요" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2175" y="115" width="240" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
