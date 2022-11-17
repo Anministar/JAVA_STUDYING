@@ -1,11 +1,11 @@
-<mxfile host="app.diagrams.net" modified="2022-11-17T01:16:04.544Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="5MLNug6DkORtBftkZdIc" version="20.5.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-11-17T01:38:33.273Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="ADh3D3p-eqJsfSng80F9" version="20.5.3" type="github" pages="5">
   <diagram id="LRee3-vCbLJE4PQT-OXH" name="USECASE DIAGRAM">
     <mxGraphModel dx="2370" dy="1323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="GT8cC2vVwMu81hNPoPUd-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="20" y="10" width="1860" height="1450" as="geometry" />
+          <mxGeometry x="40" y="10" width="1860" height="1450" as="geometry" />
         </mxCell>
         <mxCell id="YhjqENg5tmqZNu0jKvC--1" value="USECASE DIAGRAM" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="90" y="10" width="140" height="30" as="geometry" />
@@ -913,17 +913,11 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="NT14n01iSTHm4lyuT28p-1" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="235" y="110" width="20" height="760" as="geometry" />
-        </mxCell>
-        <mxCell id="NT14n01iSTHm4lyuT28p-2" value="회원" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="220" y="80" width="50" height="30" as="geometry" />
+        <mxCell id="hRPBOTRzGKhaIS6jKcHd-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="48" width="2020" height="1742" as="geometry" />
         </mxCell>
         <mxCell id="NT14n01iSTHm4lyuT28p-3" value="예약관리" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
-          <mxGeometry x="485" y="110" width="1660" height="1660" as="geometry" />
-        </mxCell>
-        <mxCell id="hRPBOTRzGKhaIS6jKcHd-1" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="NT14n01iSTHm4lyuT28p-3">
-          <mxGeometry x="-365" y="-50" width="2025" height="1710" as="geometry" />
+          <mxGeometry x="485" y="110" width="105" height="760" as="geometry" />
         </mxCell>
         <mxCell id="NT14n01iSTHm4lyuT28p-4" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" parent="NT14n01iSTHm4lyuT28p-3" vertex="1">
           <mxGeometry x="47" y="456" width="7.17" height="84" as="geometry" />
@@ -981,6 +975,12 @@
               <mxPoint x="-73" y="300" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="NT14n01iSTHm4lyuT28p-1" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="235" y="110" width="20" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="NT14n01iSTHm4lyuT28p-2" value="회원" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="220" y="80" width="50" height="30" as="geometry" />
         </mxCell>
         <mxCell id="NT14n01iSTHm4lyuT28p-12" value="로그인" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="325" y="110" width="100" height="760" as="geometry" />
@@ -1176,7 +1176,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="P4a1sSQNRqSieqrDUod_-1" value="// 트랜젝션을 이용한 rollback() 처리 필요" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1890" y="1074" width="240" height="30" as="geometry" />
+          <mxGeometry x="1840" y="1074" width="240" height="30" as="geometry" />
         </mxCell>
         <mxCell id="YDX70OXRiz6LKOPYaAPn-1" value="" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="220" y="985" width="20" height="770" as="geometry" />
@@ -1651,6 +1651,9 @@
             </Array>
             <mxPoint x="1" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="w0KKmr4bPRLj2wQqiFpH-1" value="Owner" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195" y="953" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
