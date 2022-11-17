@@ -1,0 +1,4 @@
+DESC `member`;
+
+SELECT * FROM `member`;
+SELECT * FROM `owner`;
