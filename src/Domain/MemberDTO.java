@@ -26,11 +26,7 @@ public class MemberDTO implements DTO {
 		
 	}
 	
-
-
-
-
-
+	
 	//Getter and Settr 만들기
 	
 	

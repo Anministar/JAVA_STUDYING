@@ -60,7 +60,16 @@ public class MemberService {
 		}
 	}
 	//4 주소 수정
+	
+	
+	
+	
 	//5 회원 삭제
+	
+	
+	
+	
+	
 	//6 모든 멤버조회
 
 	public ArrayList<MemberDTO> ShowAllMember() {

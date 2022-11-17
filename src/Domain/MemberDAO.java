@@ -48,15 +48,14 @@ public class MemberDAO {
 	public int InsertMember(MemberDTO dto) {
 		int result = 0;
 		try {
-			pstmt = conn.prepareStatement("INSERT INTO `member` VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-			pstmt.setInt(1, dto.getUserId());
-			pstmt.setString(2, dto.getMemId());
-			pstmt.setString(3, dto.getPwd());
-			pstmt.setString(4, dto.getName());
-			pstmt.setString(5, dto.getPhone());
-			pstmt.setString(6, dto.getAddr());
-			pstmt.setString(7, dto.getEmail());
-			pstmt.setInt(8, dto.getPerm());
+			pstmt = conn.prepareStatement("INSERT INTO `member` VALUES (0, ?, ?, ?, ?, ?, ?, ?)");
+			pstmt.setString(1, dto.getMemId());
+			pstmt.setString(2, dto.getPwd());
+			pstmt.setString(3, dto.getName());
+			pstmt.setString(4, dto.getPhone());
+			pstmt.setString(5, dto.getAddr());
+			pstmt.setString(6, dto.getEmail());
+			pstmt.setInt(7, dto.getPerm());
 			
 			result = pstmt.executeUpdate();
 			
@@ -72,11 +71,10 @@ public class MemberDAO {
 	public int Insertowner(OwnerDTO dto) {
 		int result = 0;
 		try {
-			pstmt = conn.prepareStatement("INSERT INTO `owner` VALUES (?, ?, ?, ?)");
-			pstmt.setInt(1, dto.getOwnerId());
-			pstmt.setInt(2, dto.getHotelId());
-			pstmt.setString(3, dto.getHotelname());
-			pstmt.setBoolean(4, dto.getIsReserve());
+			pstmt = conn.prepareStatement("INSERT INTO `owner` VALUES (0, ?, ?, ?)");
+			pstmt.setInt(1, dto.getHotelId());
+			pstmt.setString(2, dto.getHotelname());
+			pstmt.setBoolean(3, dto.getIsReserve());
 			
 			
 			result = pstmt.executeUpdate();
@@ -91,15 +89,14 @@ public class MemberDAO {
 	public int InsertAdmin(MemberDTO dto) {
 		int result = 0;
 		try {
-			pstmt = conn.prepareStatement("INSERT INTO `member` VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
-			pstmt.setInt(1, dto.getUserId());
-			pstmt.setString(2, dto.getMemId());
-			pstmt.setString(3, dto.getPwd());
-			pstmt.setString(4, dto.getName());
-			pstmt.setString(5, dto.getPhone());
-			pstmt.setString(6, dto.getAddr());
-			pstmt.setString(7, dto.getEmail());
-			pstmt.setInt(8, dto.getPerm());
+			pstmt = conn.prepareStatement("INSERT INTO `member` VALUES (0, ?, ?, ?, ?, ?, ?, ?)");
+			pstmt.setString(1, dto.getMemId());
+			pstmt.setString(2, dto.getPwd());
+			pstmt.setString(3, dto.getName());
+			pstmt.setString(4, dto.getPhone());
+			pstmt.setString(5, dto.getAddr());
+			pstmt.setString(6, dto.getEmail());
+			pstmt.setInt(7, dto.getPerm());
 			
 			result = pstmt.executeUpdate();
 			
@@ -119,12 +116,24 @@ public class MemberDAO {
 			if(rs != null) {
 				while(rs.next()) {
 					dto = new MemberDTO();
+					dto.setUserId(rs.getInt("userId"));
+					dto.setMemId(rs.getString("memId"));
+					dto.setPwd(rs.getString("pwd"));
+					dto.setName(rs.getString("name"));
+					dto.setPhone(rs.getString("phone"));
+					dto.setAddr(rs.getString("addr"));
+					dto.setEmail(rs.getString("email"));
+					dto.setPerm(rs.getInt("perm"));
+					list.add(dto);
 				}
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
+		} finally {
+			try{rs.close();}catch(Exception e) {e.printStackTrace();}
+			try {pstmt.close();} catch(Exception e) {e.printStackTrace();}
 		}
-		return null;
+		return list;
 	}
 	
 	

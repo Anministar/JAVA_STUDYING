@@ -7,8 +7,8 @@
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="C:/oraclexe/app/oracle/product/11.2.0/server/jdbc/lib/ojdbc6.jar"/>
-	<classpathentry kind="lib" path="C:/정보처리과정평가/03 프로그래밍 언어 활용/External JAR/bcrypt-0.3.jar"/>
-	<classpathentry kind="lib" path="C:/정보처리과정평가/03 프로그래밍 언어 활용/External JAR/jsoup-1.15.3.jar"/>
-	<classpathentry kind="lib" path="C:/정보처리과정평가/03 프로그래밍 언어 활용/External JAR/mysql-connector-j-8.0.31/mysql-connector-j-8.0.31.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ldh10/Desktop/정보처리산업기사/03 프로그래밍언어활용/External Libraries/mysql-connector/mysql-connector-j-8.0.31/mysql-connector-j-8.0.31.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ldh10/Desktop/정보처리산업기사/03 프로그래밍언어활용/External Libraries/jsoup/jsoup-1.15.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ldh10/Desktop/정보처리산업기사/03 프로그래밍언어활용/External Libraries/bcrypt/bcrypt-0.3.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
