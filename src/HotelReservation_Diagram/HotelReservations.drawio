@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-17T03:29:52.650Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="ok2Fc4TtcUTlQlc05Ga4" version="20.5.3" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2022-11-17T03:49:57.643Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36" etag="XowThltO06TcNiL1Pv_j" version="20.5.3" type="github" pages="5">
   <diagram id="LRee3-vCbLJE4PQT-OXH" name="USECASE DIAGRAM">
     <mxGraphModel dx="2334" dy="1053" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -681,37 +681,34 @@
           <mxGeometry y="216" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="HR5rdaaua7dhn80-lfWI-43" value="Owner" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-          <mxGeometry x="460" y="40" width="160" height="268" as="geometry" />
+          <mxGeometry x="460" y="40" width="160" height="242" as="geometry" />
         </mxCell>
         <mxCell id="tYDExsxgHDnbJgKsAJQZ-1" value="+ownerId : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
           <mxGeometry y="26" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="k_IXho7VP6cnPhOyZprI-1" value="+adminId :int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="HR5rdaaua7dhn80-lfWI-43">
+        <mxCell id="HR5rdaaua7dhn80-lfWI-44" value="+hotelId : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
           <mxGeometry y="52" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="HR5rdaaua7dhn80-lfWI-44" value="+hotelId : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
+        <mxCell id="HR5rdaaua7dhn80-lfWI-45" value="+hotelName : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
           <mxGeometry y="78" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="HR5rdaaua7dhn80-lfWI-45" value="+hotelName : String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
+        <mxCell id="HR5rdaaua7dhn80-lfWI-46" value="+isReserve : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
           <mxGeometry y="104" width="160" height="26" as="geometry" />
         </mxCell>
-        <mxCell id="HR5rdaaua7dhn80-lfWI-46" value="+isReserve : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
-          <mxGeometry y="130" width="160" height="26" as="geometry" />
-        </mxCell>
         <mxCell id="HR5rdaaua7dhn80-lfWI-47" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
-          <mxGeometry y="156" width="160" height="8" as="geometry" />
+          <mxGeometry y="130" width="160" height="8" as="geometry" />
         </mxCell>
         <mxCell id="HR5rdaaua7dhn80-lfWI-48" value="+ RegisterHotel(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
-          <mxGeometry y="164" width="160" height="26" as="geometry" />
+          <mxGeometry y="138" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="HR5rdaaua7dhn80-lfWI-49" value="+ ChangePrice() : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
-          <mxGeometry y="190" width="160" height="26" as="geometry" />
+          <mxGeometry y="164" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="HR5rdaaua7dhn80-lfWI-50" value="+ ModifyDate : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
-          <mxGeometry y="216" width="160" height="26" as="geometry" />
+          <mxGeometry y="190" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="HR5rdaaua7dhn80-lfWI-51" value="+ UnregisterHotel() : boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="HR5rdaaua7dhn80-lfWI-43" vertex="1">
-          <mxGeometry y="242" width="160" height="26" as="geometry" />
+          <mxGeometry y="216" width="160" height="26" as="geometry" />
         </mxCell>
         <mxCell id="HR5rdaaua7dhn80-lfWI-52" value="Payment" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
           <mxGeometry x="726" y="670" width="160" height="138" as="geometry" />
@@ -869,7 +866,7 @@
         <mxCell id="HR5rdaaua7dhn80-lfWI-96" value="// Owner와 Htoel, Member에 대한 CRUD가 각각 있어야함." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" parent="1" vertex="1">
           <mxGeometry x="400" y="640" width="280" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="HR5rdaaua7dhn80-lfWI-97" value="관리&lt;br&gt;CRUD" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1.009;entryY=0.876;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="HR5rdaaua7dhn80-lfWI-64" target="HR5rdaaua7dhn80-lfWI-101" edge="1">
+        <mxCell id="HR5rdaaua7dhn80-lfWI-97" value="관리&lt;br&gt;CRUD" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.502;entryY=1.016;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="HR5rdaaua7dhn80-lfWI-64" target="HR5rdaaua7dhn80-lfWI-51" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="630" y="141" as="sourcePoint" />
             <mxPoint x="770" y="141" as="targetPoint" />
@@ -908,17 +905,17 @@
         <mxCell id="tYDExsxgHDnbJgKsAJQZ-3" value="hotelId : PK, FK&lt;br&gt;ownerId : FK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="776" y="252" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="tYDExsxgHDnbJgKsAJQZ-4" value="ownerId : PK&lt;br&gt;adminId : FK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="450" y="307" width="90" height="40" as="geometry" />
+        <mxCell id="tYDExsxgHDnbJgKsAJQZ-4" value="ownerId : PK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="545" y="292" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="tYDExsxgHDnbJgKsAJQZ-5" value="hotelId : PK&lt;br&gt;ownerId : FK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1185" y="212" width="90" height="40" as="geometry" />
+        <mxCell id="tYDExsxgHDnbJgKsAJQZ-5" value="hotelId : PK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1185" y="217" width="90" height="30" as="geometry" />
         </mxCell>
         <mxCell id="tYDExsxgHDnbJgKsAJQZ-6" value="rId : PK&lt;br&gt;hotelId : FK&lt;br&gt;userId : FK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="1225" y="390" width="80" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eyDfGFlNQc-YaOSWLqAH-1" value="userid : PK&lt;br&gt;ownerId :FK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
-          <mxGeometry x="1220" y="612" width="90" height="40" as="geometry" />
+        <mxCell id="eyDfGFlNQc-YaOSWLqAH-1" value="userid : PK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="1225" y="617" width="80" height="30" as="geometry" />
         </mxCell>
         <mxCell id="eyDfGFlNQc-YaOSWLqAH-2" value="payId : PK&lt;br&gt;userid : FK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="635" y="725" width="80" height="40" as="geometry" />
@@ -963,7 +960,7 @@
           <mxGeometry x="1480" y="235" width="100" height="40" as="geometry" />
         </mxCell>
         <mxCell id="lzMFOU7qdmTCP5jTFhN3-1" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Owner는 숙소관리(등록,수정,삭제)를 할수있다.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Non-Member는 숙소관리(등록,수정,삭제)를 할 수 없다&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Member는 숙소관리(등록,수정,삭제)를 할 수 없다.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Admin은 숙소관리(등록,수정,삭제)를 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;div&gt;Owner는 숙소관리를 통하여 숙소조회를 할 수 있다.&lt;/div&gt;&lt;div&gt;Non-Member는 숙소조회 (특가조회,전체조회,상세조회,위치검색)&lt;span style=&quot;background-color: initial;&quot;&gt;를 할 수 있다.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Member는 숙소조회(특가조회,전체조회,상세조회,위치검색)를 할 수 있다.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;Admin은 숙소조회를 할 수 없다.&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Owner는 회원가입을 할 수 없다.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 회원가입을 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 회원가입을 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&amp;nbsp;Admin은 회원가입을 할 수 없다&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는 나의정보를 확인할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 나의정보를 확인할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 나의정보(수정,삭제)를 확인할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Admin은 나의정보를 확인할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는 리뷰작성을 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 리뷰작성을 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 리뷰작성을 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Admin은 리뷰작성을 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는 숙소예약을 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 숙소예약을 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 숙소예약을 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Admin은 숙소예약을 할 수 없다&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는 멤버예약을 통하여 예약조회를 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 예약조회를 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 예약조회를 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Admin은 멤버예약관리를 통해서 예약조회를 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는 예약취소를 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는 예약취소를 할 수 없다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는 숙소가 예약 되어있는 것 에 한하여 예약취소를 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Admin은 멤버예약관리를 통해서 예약취소를 할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;Owner는&amp;nbsp; 예약승인을 할 수 없다.&lt;/div&gt;&lt;div&gt;&lt;div&gt;Member는 예약승인을 할 수 없다.&lt;/div&gt;&lt;div&gt;&lt;div&gt;Non-Member는&amp;nbsp; 예약승인을 할 수 없다.&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Admin은 멤버 예약관리를 통해서 예약승인을 할 수 있다.&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Owner는&amp;nbsp;&amp;nbsp;예약수정을 할 수 없다.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Member는&amp;nbsp;&amp;nbsp;예약수정을 할 수 없다.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Non-Member는&amp;nbsp;&amp;nbsp;예약수정을 할 수 없다.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Admin은 멤버 예약관리를 통해서 예약수정을 할 수 있다.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;div&gt;Owner는&amp;nbsp; 멤버조회를 할 수 없다.&lt;br&gt;&lt;/div&gt;&lt;div&gt;Member는&amp;nbsp; 멤버조회를 할 수 없다.&lt;br&gt;&lt;/div&gt;&lt;div&gt;Non-Member는&amp;nbsp; 멤버조회를 할 수 없다.&lt;br&gt;&lt;/div&gt;&lt;div&gt;Admin은 멤버관리를 통해서 멤버조회를 할 수 있다.&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;Owner는&amp;nbsp; 멤버삭제를 할 수 없다.&lt;br&gt;&lt;/div&gt;&lt;div&gt;Member는&amp;nbsp; 멤버삭제를 할 수 없다.&lt;br&gt;&lt;/div&gt;&lt;div&gt;Non-Member는&amp;nbsp; 멤버삭제를 할 수 없다.&lt;br&gt;&lt;/div&gt;&lt;div&gt;Admin은 멤버관리를 통해서 멤버삭제를 할 수 있다.&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;리뷰작성, 나의정보,숙소예약, 예약조회, 예약취소, 멤버예약관리, 멤버관리,멤버예약,숙소관리는&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;로그인 인증 후 이용할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;숙소예약은 결제 후 이용할 수 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;로그인방식에는 페이스북,Google,Apple,E-Mail등이 있다.&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;결제방식에는 무통장입금, 카드결제 가 있다.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="20" y="15" width="530" height="1010" as="geometry" />
+          <mxGeometry x="10" y="15" width="530" height="1010" as="geometry" />
         </mxCell>
         <mxCell id="f9iftS0r9zMEsvKzUMsQ-3" value="index : PK" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1540" y="647" width="80" height="30" as="geometry" />
