@@ -1,7 +1,5 @@
 package Tests;
 
-import java.util.ArrayList;
-
 import Controller.FrontController;
 import Domain.MemberDTO;
 import Service.MemberService;
@@ -27,10 +25,26 @@ public class UnitTests {
 //		else {
 //			System.out.println("회원등록에 실패하셨습니다.");
 //		}
+		
+//		boolean flag = service.RegisterMember(new MemberDTO(0, "member3", "3333", "김동현", "010-3333-3333", "서울", "Donghyun@gmail.com", 1));
+//		if (flag) {
+//			System.out.println("회원등록에 성공하셨습니다.");
+//		}
+//		else {
+//			System.out.println("회원등록에 실패하셨습니다.");
+//		}
+		
+//		boolean flag = service.RegisterMember(new MemberDTO(0, "member4", "4444", "이주현", "010-4444-4444", "부산", "dlwngus@gmail.com", 1));
+//		if (flag) {
+//			System.out.println("회원등록에 성공하셨습니다.");
+//		}
+//		else {
+//			System.out.println("회원등록에 실패하셨습니다.");
+//		}
 
 		
 		// Owner 등록
-//		boolean flag = service.RegisterOwner(new OwnerDTO(1, 1, "갓킹식 호텔", true));
+//		boolean flag = service.RegisterOwner(new OwnerDTO(0, "갓킹식", "010-1000-1000"));
 //		if (flag) {
 //			System.out.println("Owner등록에 성공하셨습니다.");
 //		} else {
@@ -54,6 +68,34 @@ public class UnitTests {
 //		for (MemberDTO dto : list) {
 //			System.out.println(dto.toString());
 //		}
+		
+		
+		// 선택 회원 조회
+//		FrontController controller = new FrontController();
+		MemberDTO jo = new MemberDTO(6, "member5", "5555", "조창재", "010-5555-5555", "대구", "whckdwo@gmail.com", 1);
+////		service.RegisterMember(jo);
+//		MemberDTO res = (MemberDTO) controller.ExSubController("/member", 7, jo);
+//		System.out.println(res.toString());
+		
+		// 회원 주소 수정하기
+//		boolean flag = service.UpdateMemberAddress(jo);
+//		if (flag) {
+//			System.out.println("회원수정 성공하셨습니다.");
+//		}
+//		else {
+//			System.out.println("회원수정 실패하셨습니다.");
+//		}
+		
+		
+		// 회원 삭제
+		boolean flag = service.DeleteMember(jo);
+		if(flag) {
+			System.out.println("회원삭제 성공입니다.");
+		}
+		else {
+			System.out.println("회원삭제 실패입니다.");
+		}
+		
 		
 		
 	}

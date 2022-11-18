@@ -13,6 +13,12 @@ public class MemberDTO implements DTO {
 	public MemberDTO() {
 		// TODO Auto-generated constructor stub
 	}
+	public MemberDTO (int userId, String memId, String pwd) {
+		super();
+		this.userId = userId;
+		this.memId = memId;
+		this.pwd = pwd;
+	}
 	public MemberDTO(int userId, String memId, String pwd, String name, String phone, String addr, String email, int perm) {
 		super();
 		this.userId = userId;
@@ -89,6 +95,5 @@ public class MemberDTO implements DTO {
 		return "MemberDTO [userId=" + userId + ", memId=" + memId + ", pwd=" + pwd + ", name=" + name + ", phone="
 				+ phone + ", addr=" + addr + ", email=" + email + ", perm=" + perm + "]";
 	}
-	
 	
 }

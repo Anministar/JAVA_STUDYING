@@ -2,55 +2,44 @@ package Domain;
 
 public class OwnerDTO {
 	private int ownerId;
-	private int hotelId;
-	private String hotelname;
-	private Boolean isReserve;
+	private String ownername;
+	private String ownerphone;
 	
 	
 	
-	public OwnerDTO(int ownerId, int hotelId, String hotelname, Boolean isReserve) {
+	public OwnerDTO(int ownerId, String ownername, String ownerphone) {
 		super();
 		this.ownerId = ownerId;
-		this.hotelId = hotelId;
-		this.hotelname = hotelname;
-		this.isReserve = isReserve;
+		this.ownername = ownername;
+		this.ownerphone = ownerphone;
 	}
+	
 	//Getter and Setter 만들기
-	
-	
 	public int getOwnerId() {
 		return ownerId;
 	}
 	public void setOwnerId(int ownerId) {
 		this.ownerId = ownerId;
 	}
-	public int getHotelId() {
-		return hotelId;
+	public String getOwnername() {
+		return ownername;
 	}
-	public void setHotelId(int hotelId) {
-		this.hotelId = hotelId;
+	public void setOwnername(String ownername) {
+		this.ownername = ownername;
 	}
-	public String getHotelname() {
-		return hotelname;
+	public String getOwnerphone() {
+		return ownerphone;
 	}
-	public void setHotelname(String hotelname) {
-		this.hotelname = hotelname;
-	}
-	public Boolean getIsReserve() {
-		return isReserve;
-	}
-	public void setIsReserve(Boolean isReserve) {
-		this.isReserve = isReserve;
+	public void setOwnerphone(String ownerphone) {
+		this.ownerphone = ownerphone;
 	}
 	
 	
 	//toString() 만들기
 	@Override
 	public String toString() {
-		return "OwnerDTO [ownerId=" + ownerId + ", hotelId=" + hotelId + ", hotelname=" + hotelname + ", isReserve="
-				+ isReserve + "]";
+		return "OwnerDTO [ownerId=" + ownerId + ", ownername=" + ownername + ", ownerphone=" + ownerphone + "]";
 	}
-	
 	
 	
 }
