@@ -41,8 +41,7 @@ public class MemberDAO {
 	}
 
 	
-	// 회원 등록하기
-	// Admin 등록하기
+	// 회원 등록하기 & Admin 등록하기
 	
 	public int Insert(MemberDTO dto) {
 		int result = 0;
@@ -71,9 +70,6 @@ public class MemberDAO {
 			pstmt = conn.prepareStatement("INSERT INTO `owner` VALUES (0, ?, ?)");
 			pstmt.setString(1, dto.getOwnername());
 			pstmt.setString(2, dto.getOwnerphone());
-			
-			
-			
 			result = pstmt.executeUpdate();
 			
 		} catch (Exception e) {
@@ -85,31 +81,26 @@ public class MemberDAO {
 	
 	
 	
-	// 회원 주소 수정하기 (트랜젝션 사용)
+	// 회원 주소 수정하기
 	public int Update(MemberDTO dto) { 
 		
-		MemberDTO dto1 = null;
 		int result = 0;
 		
 		try {
-			
-			
-			conn.setAutoCommit(false);
-			
-			pstmt =  conn.prepareStatement("SELECT * FROM member where userid = ?");
-			pstmt.setInt(1, dto.getUserId());
-			rs = pstmt.executeQuery();
-			
-			
 			pstmt = conn.prepareStatement("UPDATE member set memid = ?, pwd = ?, name = ?, phone = ?, addr = ?, email = ?, perm = ? WHERE userid = ?");
-			pstmt.setInt(1, dto.getUserId());
+			pstmt.setString(1, dto.getMemId());
+			pstmt.setString(2, dto.getPwd());
+			pstmt.setString(3, dto.getPwd());
+			pstmt.setString(4, dto.getName());
+			pstmt.setString(5, dto.getPhone());
+			pstmt.setString(6, dto.getAddr());
+			pstmt.setInt(7, dto.getPerm());
+			pstmt.setInt(8, dto.getUserId());
 			result = pstmt.executeUpdate();
 			
-				
 			} catch (Exception e) {
 				e.printStackTrace();
 			} finally {
-				try{rs.close();}catch(Exception e) {e.printStackTrace();}
 				try {pstmt.close();} catch(Exception e) {e.printStackTrace();}
 			}
 		return result;
@@ -120,62 +111,22 @@ public class MemberDAO {
 	// 회원 삭제하기
 	
 	public int Delete(MemberDTO dto) {
-
-		MemberDTO dto1 = null;
 		int result = 0;
 		try {
-			
-			conn.setAutoCommit(false);
-			
-			pstmt = conn.prepareStatement("SELECT * FROM member WHERE userid = ?");
-			pstmt.setInt(1, dto.getUserId());
-			rs = pstmt.executeQuery();
-			if (rs != null) {
-				while(rs.next()) {
-					dto1 = new MemberDTO();
-					dto1.setUserId(rs.getInt("userId"));
-					dto1.setMemId(rs.getString("memId"));
-					dto1.setPwd(rs.getString("pwd"));
-					dto1.setName(rs.getString("name"));
-					dto1.setPhone(rs.getString("phone"));
-					dto1.setAddr(rs.getString("addr"));
-					dto1.setEmail(rs.getString("email"));
-					dto1.setPerm(rs.getInt("perm"));
-				}
-			}
-		
-			//멤버ID를 받아오는 작업한 후에 객체의 ID와 같다면 Update를 실행하는 로직 구현
-			if (dto1.getUserId() == dto.getUserId()) {
-			
-			
-
 				pstmt = conn.prepareStatement("DELETE FROM member where userid = ?");
 				pstmt.setInt(1, dto.getUserId());
 				
 				result = pstmt.executeUpdate();
 				
-				conn.commit();
-			}
-			else {
-				conn.rollback();
-			}
 			} catch (Exception e) {
 				e.printStackTrace();
-				result = 0;
-				try {
-					conn.rollback();
-					System.out.println("회원정보를 찾을 수 없습니다.");
-				} catch (Exception e2) {
-					e2.printStackTrace();
-				}
 			} finally {
-				try{rs.close();}catch(Exception e) {e.printStackTrace();}
 				try {pstmt.close();} catch(Exception e) {e.printStackTrace();}
 			}
 		return result;
 	}
 	
-	//모든 회원 조회
+		//모든 회원 조회
 
 		public ArrayList<MemberDTO> SelectAll() {
 			ArrayList<MemberDTO> list = new ArrayList<MemberDTO>();

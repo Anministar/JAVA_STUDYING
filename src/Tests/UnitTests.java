@@ -1,5 +1,7 @@
 package Tests;
 
+import java.util.ArrayList;
+
 import Controller.FrontController;
 import Domain.MemberDTO;
 import Service.MemberService;
@@ -64,7 +66,7 @@ public class UnitTests {
 		
 		// 모든 회원 조회
 //		FrontController controller = new FrontController();
-//		ArrayList<MemberDTO> list = (ArrayList<MemberDTO>) controller.ExSubController("/member", 6, null);
+//		ArrayList<MemberDTO> list = (ArrayList<MemberDTO>) controller.ExSubController("/member", 5, null);
 //		for (MemberDTO dto : list) {
 //			System.out.println(dto.toString());
 //		}
@@ -72,9 +74,9 @@ public class UnitTests {
 		
 		// 선택 회원 조회
 //		FrontController controller = new FrontController();
-		MemberDTO jo = new MemberDTO(6, "member5", "5555", "조창재", "010-5555-5555", "대구", "whckdwo@gmail.com", 1);
+//		MemberDTO jo = new MemberDTO(5, "member4", "4444", "이주현", "010-4444-4444", "부산", "dlwngus@gmail.com", 1);
 ////		service.RegisterMember(jo);
-//		MemberDTO res = (MemberDTO) controller.ExSubController("/member", 7, jo);
+//		MemberDTO res = (MemberDTO) controller.ExSubController("/member", 6, jo);
 //		System.out.println(res.toString());
 		
 		// 회원 주소 수정하기
@@ -88,13 +90,16 @@ public class UnitTests {
 		
 		
 		// 회원 삭제
-		boolean flag = service.DeleteMember(jo);
-		if(flag) {
-			System.out.println("회원삭제 성공입니다.");
-		}
-		else {
-			System.out.println("회원삭제 실패입니다.");
-		}
+//		MemberDTO jo = new MemberDTO(5, "member4", "4444", "이주현", "010-4444-4444", "부산", "dlwngus@gmail.com", 1);
+//		boolean flag = service.DeleteMember(jo);
+//		if(flag) {
+//			System.out.println("회원삭제 성공입니다.");
+//		}
+//		else {
+//			System.out.println("회원삭제 실패입니다.");
+//		}
+		
+	
 		
 		
 		
