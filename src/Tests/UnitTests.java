@@ -74,13 +74,13 @@ public class UnitTests {
 		
 		// 선택 회원 조회
 //		FrontController controller = new FrontController();
-//		MemberDTO jo = new MemberDTO(5, "member4", "4444", "이주현", "010-4444-4444", "부산", "dlwngus@gmail.com", 1);
+//		MemberDTO jo = new MemberDTO(5, "MEM", "4444", "이주현", "010-4444-4444", "부산", "dlwngus@gmail.com", 1);
 ////		service.RegisterMember(jo);
 //		MemberDTO res = (MemberDTO) controller.ExSubController("/member", 6, jo);
 //		System.out.println(res.toString());
 		
 		// 회원 주소 수정하기
-//		boolean flag = service.UpdateMemberAddress(jo);
+//		boolean flag = service.UpdateMember(jo.getMemId());
 //		if (flag) {
 //			System.out.println("회원수정 성공하셨습니다.");
 //		}

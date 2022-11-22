@@ -46,9 +46,9 @@ public class MemberController implements SubController {
 		case 3: // 수정
 			if (dto instanceof MemberDTO) {
 				MemberDTO down = (MemberDTO) dto;
-				flag = service.UpdateMember(down);
+				flag = service.UpdateMember(down.getMemId());
 			}
-			System.out.println("[SYSTEM] : 회원 주소 수정 서비스입니다.");
+			System.out.println("[SYSTEM] : 회원 수정 서비스입니다.");
 			if (flag) {
 				obj = "수정 성공입니다.";
 			}
@@ -56,19 +56,21 @@ public class MemberController implements SubController {
 				obj = "수정 실패입니다.";
 			}
 			break;
+			
+			
 		case 4: // 회원 삭제
-			if (dto instanceof DTO) {
+			if (dto instanceof MemberDTO) {
 				MemberDTO down = (MemberDTO) dto;
 				flag = service.DeleteMember(down);
 			}
-			System.out.println("회원삭제 서비스입니다.");
-			
-			if (flag) {
+			System.out.println("[SYSTEM] : 회원삭제 서비스입니다.");
+			if(flag) {
 				obj = "삭제 성공입니다.";
 			}
 			else {
 				obj = "삭제 실패입니다.";
 			}
+			
 			break;
 		case 5: // 모든 멤버조회 //Admin의 기능
 
@@ -93,21 +95,19 @@ public class MemberController implements SubController {
 //			}
 			break;
 		case 6: // 선택 멤버조회 //Owner와 Admin의 기능
-			if (dto instanceof DTO) {
-				MemberDTO down = (MemberDTO) dto;
-				obj = service.ShowMember(down.getMemId());
-				System.out.printf("[SYSTEM] : %s 회원정보를 조회합니다. \n", down.getMemId());
-//				if (obj != null) {
-//					obj = down.getMemId() + "회원의 정보를 조회합니다.";
-//				} else {
-//					obj = "회원정보 조회를 실패했습니다.";
-//				}
-			}
 			
+			obj = service.ShowMember();
+				if (obj != null) {
+					System.out.println("회원정보 조회 성공");
+					
+				} else {
+					System.out.println("회원정보 조회 실패");
+					
+				}
 			break;
 		default:
 			System.out.println("잘못된 서비스 요청입니다.");
-		}
+	}
 		return obj;
 
 	}

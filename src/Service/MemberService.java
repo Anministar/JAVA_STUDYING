@@ -47,31 +47,45 @@ public class MemberService {
 
 	// 3 주소 수정
 
-	public boolean UpdateMember(MemberDTO dto) {
+	public boolean UpdateMember(String mid) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("[SYSTEM] : 회원정보를 변경할 회원 아이디를 입력해주세요 >>> ");
-		String id = sc.nextLine();
-		MemberDTO res = dao.Select(id);
-		if (res != null) {
+
+		MemberDTO dto = dao.Select(mid);
+		if (dto != null) {
+			System.out.println("수정할 회원 아이디를 입력하세요 >>> ");
 			String memid = sc.nextLine();
 			dto.setMemId(memid);
+
+			System.out.println("수정할 비밀번호를 입력하세요 >>> ");
 			String pwd = sc.nextLine();
 			dto.setPwd(pwd);
+
+			System.out.println("수정할 이름을 입력하세요 >>> ");
 			String name = sc.nextLine();
 			dto.setName(name);
+
+			System.out.println("수정할 핸드폰 번호를 입력하세요 >>> ");
 			String phone = sc.nextLine();
 			dto.setPhone(phone);
+
+			System.out.println("수정할 주소를 입력하세요 >>> ");
 			String addr = sc.nextLine();
 			dto.setAddr(addr);
+
+			System.out.println("수정할 이메일을 입력하세요 >>> ");
 			String email = sc.nextLine();
 			dto.setEmail(email);
-			
+
 			int result = dao.Update(dto);
+
 			if (result > 0) {
+				System.out.println("수정 성공!!");
 				return true;
 			} else {
+				System.out.println("수정 실패!!");
 				return false;
-			}	
+			}
+
 		} else {
 			return false;
 		}
@@ -80,13 +94,17 @@ public class MemberService {
 	// 4 회원 삭제
 	public boolean DeleteMember(MemberDTO dto) {
 
-		int result = dao.Delete(dto);
-		if (result > 0) {
-			return true;
+		if (dto != null) {
+			int result = dao.Delete(dto);
+			if (result > 0) {
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			return false;
 		}
-		return false;
 	}
-
 	// 5 모든 멤버조회
 
 	public ArrayList<MemberDTO> ShowAllMember() {
@@ -95,9 +113,18 @@ public class MemberService {
 
 	// 6 선택 멤버조회
 
-	public MemberDTO ShowMember(String id) {
-		return dao.Select(id);
-
+	public MemberDTO ShowMember() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("회원정보의 아이디를 입력하세요 >>> ");
+		String id = sc.nextLine();
+		if (dao.Select(id) != null) {
+			System.out.println("조회하신 회원정보는 " + dao.Select(id).toString());
+			return dao.Select(id);
+		}
+		else {
+			return null;
+		}
+		
 	}
 
 }

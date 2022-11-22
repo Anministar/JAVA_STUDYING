@@ -2,6 +2,7 @@ DESC `member`;
 
 SELECT * FROM `member`;
 SELECT * FROM `owner`;
+DESC `owner`;
 
 
 DELETE FROM `member` where userid >= 7;

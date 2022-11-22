@@ -87,13 +87,13 @@ public class MemberDAO {
 		int result = 0;
 		
 		try {
-			pstmt = conn.prepareStatement("UPDATE member set memid = ?, pwd = ?, name = ?, phone = ?, addr = ?, email = ?, perm = ? WHERE userid = ?");
+			pstmt = conn.prepareStatement("UPDATE MEMBER SET MEMID=?, PWD=?, NAME=?, PHONE=?, ADDR=?, EMAIL=?, PERM=? WHERE USERID=?");
 			pstmt.setString(1, dto.getMemId());
 			pstmt.setString(2, dto.getPwd());
-			pstmt.setString(3, dto.getPwd());
-			pstmt.setString(4, dto.getName());
-			pstmt.setString(5, dto.getPhone());
-			pstmt.setString(6, dto.getAddr());
+			pstmt.setString(3, dto.getName());
+			pstmt.setString(4, dto.getPhone());
+			pstmt.setString(5, dto.getAddr());
+			pstmt.setString(6, dto.getEmail());
 			pstmt.setInt(7, dto.getPerm());
 			pstmt.setInt(8, dto.getUserId());
 			result = pstmt.executeUpdate();

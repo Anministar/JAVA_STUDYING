@@ -1,11 +1,13 @@
 package Domain;
 
-public class OwnerDTO {
+public class OwnerDTO implements DTO{
 	private int ownerId;
 	private String ownername;
 	private String ownerphone;
 	
-	
+	public OwnerDTO() {
+		
+	}
 	
 	public OwnerDTO(int ownerId, String ownername, String ownerphone) {
 		super();
@@ -23,7 +25,7 @@ public class OwnerDTO {
 	}
 	public String getOwnername() {
 		return ownername;
-	}
+	} 
 	public void setOwnername(String ownername) {
 		this.ownername = ownername;
 	}
